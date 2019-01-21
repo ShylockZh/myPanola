@@ -1,0 +1,130 @@
+.banner {
+  width: 100%;
+  height: 12%;
+  background-image: url(../../images/gallery/gallery-banner.jpg);
+  background-size: cover;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.title {
+  padding: 80px 0;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color: white;
+}
+
+.content .title {
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  text-align: center;
+  color: gray;
+  margin: 40px 0 30px 0;
+  padding: 0;
+}
+
+.content .txt {
+  margin: 15px 0;
+}
+
+.content .txt .box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.content .txt .box img {
+  width: 100%;
+  height: 280px;
+}
+
+.content .txt .box .box-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .5;
+  transition: all 1s;
+  transform: rotateY(45deg);
+  transform: scale(0);
+  opacity: 0;
+}
+
+.content .txt .box .box-bg-box {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content .txt .box .box-bg-box .left, .content .txt .box .box-bg-box .right {
+  width: 15%;
+  height: 100%;
+  border: 1px solid white;
+  margin-right: 10px;
+  opacity: 0;
+  color: white;
+  transition: all 2s;
+  text-align: center;
+  align-items: center;
+}
+
+.content .txt .box .box-bg-box .left a, .content .txt .box .box-bg-box .right a {
+  color: white;
+  text-decoration: none;
+}
+
+.content .txt .box .box-bg-box .left i, .content .txt .box .box-bg-box .right i {
+  transition: all 2s;
+  opacity: 0;
+  margin-top: 25%;
+}
+
+.content .txt .box .box-bg-box .left i:hover, .content .txt .box .box-bg-box .right i:hover {
+  color: white;
+}
+
+.content .txt .box:hover .box-bg {
+  opacity: 0.5;
+  transform: rotate(180deg);
+  transform: scale(1);
+}
+
+.content .txt .box:hover .left, .content .txt .box:hover .right {
+  opacity: 1;
+}
+
+.content .txt .box:hover .left i, .content .txt .box:hover .right i {
+  opacity: 1;
+}
+
+.detail img {
+  width: 100%;
+  height: 300px;
+  margin: 30px 0;
+}
+
+.detail .txt {
+  width: 100%;
+  height: auto;
+  line-height: 40px;
+}
+
+.detail .txt p {
+  font-size: 30px;
+  color: gray;
+}
+
+.detail .txt span {
+  font-size: 20px;
+  color: grey;
+  margin: 15px 0;
+}

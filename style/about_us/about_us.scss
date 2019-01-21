@@ -1,0 +1,205 @@
+$color1:#fff;
+$color2:#cda274;
+$color3:#0f3a4a;
+    .head{        
+        background: url("../../images/about_us/bg-title.jpg") center top;
+        background-size:cover;
+        min-height:250px;
+        width: 100%;
+        position: relative;
+        .bg{
+            position: absolute;
+            top: 0;
+            left:0;         
+            width:100%;
+            min-height:250px;
+            background:rgba(0, 0, 0, 0.7);
+            .title{
+                font-size:44px;
+                padding-top:55px;
+                color:$color1;
+            }
+            i{
+                color:$color1;
+            }
+            .title2{          
+                margin: 10px 0;                        
+                    a{
+                        font-size:15px;
+                        text-decoration: none;
+                        color: $color1;
+                        &:hover{
+                            color: $color2;
+                        }                    
+                    }
+                }
+          }
+        }  
+    .about{
+        padding: 120px 0px;
+    }    
+    .about-row{
+        div:nth-of-type(1){
+            
+            h3{
+                font-size: 44px;
+                font-family: 'Playfair Display', serif;
+                line-height: 55px;
+                font-weight: 700;
+                color:$color3;
+            }
+            .row-text{
+                font-size:16px;
+                color: #9b9fa6;
+                font-weight: 400;
+                line-height: 30px;
+            }
+            a{
+                   margin-top:30px; 
+                   display: inline-block;
+                   padding: 18px 57px;
+                   border: 1px solid #e1e6eb;
+                   border-radius:30px;
+                   font-size: 17px;
+                   color: $color2; 
+                   text-decoration: none;
+                   background: transparent;
+                   margin-bottom: 50px;
+                   &:hover{
+                       background-color:$color3;
+                       color: $color1; 
+                   }
+               }
+            
+        }
+        div:nth-of-type(2){
+            min-height: 490px;
+            position: relative;
+            img:nth-of-type(1){
+                position: absolute;
+                top: 50px;
+                left:-100px;
+                z-index: 2;
+            }
+            img:nth-of-type(2){
+                position: absolute;
+                right:-100px;
+                bottom:50px;
+                z-index: 2;
+            }
+            img:nth-of-type(3){
+                position: absolute;
+                top: 0;
+                right:50px;
+                z-index: 1;
+                display: none;
+            }
+        }
+    }    
+    .video{
+        padding: 158px 0px 173px 0px;
+        background: url("../../images/about_us/bg-video.jpg") no-repeat;
+        background-size:cover;
+        background-attachment:fixed;
+        .container{
+            h1{
+                font-size:80px;
+                font-weight: 700px;
+                color: $color1;
+                margin-bottom: 55px;
+            }
+            .video-link{
+               padding: 30px;
+               border:5px solid #fff; 
+               border-radius:50%;  
+               transition: all 1s;
+               &:hover{
+                   cursor: pointer;
+                   background: $color2;
+               }
+               i{
+                   color:$color1;
+               }           
+            }
+        }  
+    }
+    .our-service{
+        .container{
+            h1{
+                font-size: 44px;
+                font-family: 'Playfair Display', serif;
+                line-height: 55px;
+                font-weight: 700;
+                color: $color3;
+            }
+            p{
+                font-size: 16px;
+                color: #9b9fa6;
+                line-height: 30px;
+                font-weight: 400;
+            }
+            .sec-title{
+                margin-bottom:20px;
+                img{
+                    position: relative;
+                    left: -80px;
+                }
+            }
+            .our-service-row{
+                .col-lg-3{
+                    cursor: pointer;
+                    padding: 41px 15px 15px 15px;
+                    border: 1px solid #e1e6eb;
+                    position: relative;
+                    margin-bottom:40px; 
+                    h3{
+                        font-size:20px;
+                        line-height: 30px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+                    .single-btn{
+                        position: absolute;
+                        width:42.43px;
+                        height: 42.43px;
+                        background-color: $color3;
+                        transform: rotate(45deg);
+                        bottom:-21px;
+                        left:44.5%;
+                        display: none;
+                    }
+                }
+                
+            }
+            .our-tab{
+                padding: 0px;
+                margin-top: 50px;
+                div:nth-of-type(1){
+                    padding: 0;
+                }
+                div:nth-of-type(2){
+                   h1{
+                       font-size:30px;
+                       font-weight: 700;
+                       color:#0d2933;
+                       margin-bottom: 23px;
+                       text-align: left;
+                       
+                   }
+                   p{
+                        margin-bottom: 30px;
+                        font-size: 16px;
+                        color: #9b9fa6;
+                        font-weight: 400;
+                        text-align: left;
+                   }
+                }
+            }
+        }
+    
+    }
+
+.bgchange{
+    background-color:$color3; 
+    color: $color1;
+}    

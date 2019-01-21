@@ -1,0 +1,620 @@
+$light:#faf5f0;
+$blackblue:#0d2933;
+$gold:#cda274;
+$darkgold: #cc9152;
+$grey : #9b9fa6;
+$white:#fff;
+$lightbb:#0f3a4a;
+$inputbb:#213338;
+$lightgrey:#e1e6eb;
+$lightblue:#f7f9fc;
+// title
+.sec{
+    .sec-top{
+        margin-bottom: 60px;
+    }
+    .sec-title{
+        font-size: 44px;
+        line-height: 55px;
+        color: $lightbb;
+        padding-bottom: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+        letter-spacing: 0.5em;
+    }
+    .sec-desc{
+        margin-bottom: 20px;
+        text-align: center;
+        color: $grey;
+        font-size: 16px;
+    } 
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+// btn
+.mybtn{
+    display: inline-block;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 400;
+    color: $grey;
+    border: 1px solid $lightgrey;
+    border-radius: 30px;
+    padding: 12px 33px 10px 32px;
+    transition: all 500ms ease;
+    &:hover{
+        background-color: $gold;
+        border-color: $gold;
+        color: $white;
+        text-decoration: none
+    }
+}
+
+
+.banner{
+    .swiper-container{
+        .swiper-slide{
+            .mycontainer{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                .row{
+                    .banner-content{
+                        font-size: 80px;
+                        color: #fff;
+                    }
+                    .book-table{
+                        min-height: 570px;
+                        background-color: #fff;
+                        border-radius: 5px;
+                        padding: 0!important;
+                        // overflow: hidden;
+                        .book-title{
+                            background-color: $light;
+                            color: $blackblue;
+                            padding: 20px 50px;
+                            text-align: center;
+                            font-size: 30px;
+                            // font-weight: bold;
+                            letter-spacing: 0.5em;
+                            border-radius: 5px;
+
+                        }
+                        .book-content{
+                            position: relative;
+                            padding: 20px 50px 50px;
+                            label{
+                                font-size: 16px;
+                                margin-bottom: 5px;
+                                display: block;
+                            }
+                            input,button{
+                                padding: 10px 15px;
+                                width: 280px;
+                                height: 50px;
+                                outline: 0;
+                                border-radius: 30px;
+                                font-size: 16px;
+                            }
+                            input{
+                                border:1px solid #ccc;
+                                margin-bottom: 15px;
+                            }
+                            button{
+                                border: 1px solid $gold;
+                                background-color: $gold;
+                                color: $white;
+                                font-weight: bold;
+                                letter-spacing: 0.5em;
+                                &:hover{
+                                    background-color:$darkgold;
+                                }
+                            }
+                            .guestNumber{
+                                display: none;
+                                width: 280px;
+                                top: 375px;
+                                position: absolute;
+                                background-color: pink;
+                                ul{
+                                    margin: 0;
+                                    li{
+                                        padding: 3px 16px;
+                                        background-color: $blackblue;
+                                        color: $white;
+                                        font-size: 16px;
+                                        cursor: pointer;
+                                        &:hover,&.active{
+                                            background-color: $gold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+
+// 日历插件
+.datetimepicker{
+    background-color: $blackblue;
+    .datetimepicker-dropdown-bottom-right:after{
+        display: none;
+    }
+    .table-condensed{
+        thead{
+            tr{
+                &:nth-child(1){
+                    background-color: $gold;
+                    color: $white;
+                    .switch{
+                        font-size: 16px;
+                        &:hover{
+                            background-color: $darkgold;
+                        }
+                    }
+                    .prev,.next{
+                        background-color: $white;
+                        color: #ccc;
+                    }
+                }
+                &:nth-child(2){
+                    th{
+                        color: $white;
+                    }
+                }
+            }
+        }
+        tbody{
+            .day{
+                background-color: $gold;
+                border-radius: 0;
+                color: $white;
+                &:hover{
+                    background-color: $darkgold;
+                    
+                }
+                &.old,&.new{
+                    cursor: normal;
+                    color: grey!important;
+                    background-color:$blackblue!important;
+                    &:hover{
+                        background-color:transparent!important;
+                    }
+                }
+                &.active{
+                    background: none;
+                    background-color: $darkgold!important;
+                }
+                &.today.active,&.today{
+                    background: none;
+                    background-color: $blackblue!important;
+                }
+            }
+        }
+    }
+} 
+
+// rooms
+.rooms{
+    padding: 110px 0;
+    background-color: $white;
+    .rooms-item{
+        transition: all 0.5s;
+        margin-bottom: 40px;
+        &:hover{
+            box-shadow: 0 15px 30px #e1e6eb;
+        }
+        .room-pic{
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .mask{
+                width: 100%;
+                height:100%;
+                position: absolute;
+                background-color: rgba(13, 41, 51,.8);
+                top: 0;
+                display: none;
+                .eye{
+                        width: 50px;
+                        height:50px;
+                        background-color: $white;
+                        border-radius: 50%;
+                        position:absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-left: -25px;
+                        margin-top: -25px;
+                        transition: all 0.3s;
+                        &:hover{
+                            background-color: $gold;
+                        }
+                    i{
+                        width: 50px;
+                        height:50px;
+                        display: inline-block;
+                        color: $gold;
+                        line-height: 50px;
+                        transition: all 0.3s;
+                        text-align: center;
+                        &:hover{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .room-detail{
+            border: 1px solid $lightgrey;
+            padding:30px 20px 20px;
+            position: relative;
+            .room-title{
+                a{
+                    display: block;
+                    margin-bottom: 16px;
+                    font-size: 26px;
+                    line-height: 35px;
+                    color: $blackblue;
+                }
+            }
+            .room-desc{
+                margin-bottom: 24px;
+                line-height: 26px;
+                color: $grey;
+                font-size: 16px;
+            }
+            .room-price{
+                position: absolute;
+                top: -45px;
+                right: 30px;
+                width:90px;
+                height: 90px;
+                background-color: $white;
+                color: $blackblue;
+                font-size: 26px;
+                border-radius: 50%;
+                text-align:center;
+                line-height: 70px;
+                box-shadow: 0 15px 30px #e1e6eb;
+                span{
+                    position: absolute;
+                    top: 50px;
+                    left: 20px;
+                    display: block;
+                    font-size: 13px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: italic;
+                    color: #9b9fa6;
+                } 
+            }
+        }
+    }
+}
+
+// about
+.about{
+    height: 720px;
+    padding: 120px 0;
+    background-color: $lightblue;
+    background-image: url(../../images/index/pattern.png);
+    .sec-title{
+        text-align: left;
+    }
+    img{
+        margin: 0 0 20px 0;
+    }
+    .sec-desc{
+        p{
+            margin-bottom: 30px;
+            text-align: left;
+            line-height: 38px;
+        }
+    }
+    .about-pic{
+        // visibility: visible;
+        // margin-bottom: -111px;
+        // animation-duration: 1500ms;
+        // animation-delay: 0ms;
+        // animation-name: slideInUp;
+        position: relative;
+        padding-left: 20px;
+    }
+}
+
+// service
+.service{
+    padding: 140px 0 120px;
+    .sec-title{
+        text-align: left;
+    }
+    img{
+        margin: 0 0 20px 0;
+    }
+    .sec-desc{
+        p{
+            margin-bottom: 30px;
+            text-align: left;
+            line-height: 38px;
+        }
+    }
+    .tab-btn{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 36px 15px 19px 15px;
+        border: 1px solid $lightgrey;
+        margin-bottom: 40px;
+        color: $blackblue;
+        cursor: pointer;
+        .icon{
+            text-align:center;
+        }
+        .text{            
+            text-align:center;
+        }
+    }
+    li.active .tab-btn{
+        background-color: $blackblue;
+        color: $white;
+        &:after{
+            position: absolute;
+            content: '';
+            background: #0d2933;
+            width: 30px;
+            height: 30px;
+            left: 100%;
+            // margin-left: -15px;
+            margin-bottom: 45px;
+            margin-left: -15px;
+            bottom: -8px;
+            transform: rotate(45deg);
+        }
+        .icon{
+            color:$gold;
+        }
+    }
+    .content-container{
+        .tab-content{
+            position: relative;
+            display: none;
+            img{
+                width: 100%;
+                margin: 0;
+            }
+            .tab-info{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 50%;
+                background-color: $gold;
+                color: $white;
+                padding: 30px 20px;
+                .tab-title{
+                    font-size: 30px;
+                    padding: 0 0 20px;
+                    font-weight: bold;
+                    letter-spacing: 0.5em;
+                }
+                .tab-desc{
+                    text-indent: 2em;
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+    } 
+}
+
+// enjoy
+.enjoy{
+    height: 550px;
+    background-image: url('../../images/index/bg2.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+    background-position: center center;
+    .enjoy-cover{
+        padding: 160px 0;
+        // width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        .title{
+            font-size: 90px;
+            color: $white;
+            letter-spacing: 0.5em;
+            text-align: center;
+        }
+    }
+}
+
+// discover{
+.discover{
+    // height: 720px;
+    padding: 120px 0;
+    background-color: $lightblue;
+    background-image: url(../../images/index/pattern.png);
+    .owl-carousel{
+        .item{
+            position: relative;
+            overflow: hidden;
+            img{
+                transition: all 0.5s;
+            }
+            &:hover img{
+                transform: scale(1.2);
+            }
+            .title{
+                position: absolute;
+                bottom: 0;
+                padding: 10px 20px;
+                color: $white;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+// others
+.others{
+    padding: 120px 0;
+    .item{
+        border: 1px solid $lightgrey;
+        transition: all 0.3s;
+        &:hover{
+            border: 1px solid $gold;
+        }
+        .others-content{
+            padding: 50px 15px 32px;
+            .photo{
+                width: 85px;
+                height: 85px;
+                margin: 0 auto;
+                display: block;
+            }
+            .line{
+                margin: 30px auto;
+                width: auto;
+            }
+            .other-text{
+                .name{
+                    text-align: center;
+                    font-size: 22px;
+                    font-weight: 400;
+                    margin-bottom: 5px;
+                    line-height: 30px;
+                    color: $blackblue;
+                }
+                .title{
+                    margin-bottom:20px; 
+                }
+                .title,.text p{
+                    text-align: center;
+                    font-size: 16px;
+                    color: $grey;
+                    line-height: 30px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+// contact
+.contact{
+    width:100%;
+    position: relative;
+    #allmap{
+        width: 100%;
+        height: 500px;
+        background-color: #ccc;
+    }
+    .contact-content{
+        position: absolute;
+        top: 0;
+        left: 200px;
+        height: 100%;
+        width: 470px;
+        background-color: $blackblue;   
+        padding: 40px 40px 30px;
+        .contact-title{
+            color: $white;
+            font-size: 30px;
+            letter-spacing: 0.5em;
+            margin-bottom: 20px;
+        }
+        input,textarea{
+            width: 100%;
+            background-color: $inputbb;
+            border: 1px solid $blackblue;
+            outline: 0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            margin-bottom:20px; 
+            color: $grey;
+        }
+        textarea{
+            height: 145px;
+        }
+        button{
+            width: 150px;
+            padding: 10px 20px;
+            background-color: $gold;
+            outline: 0;
+            border: 0;
+            border-radius: 30px;
+            color: $white;
+            font-size: 26px;
+            &:hover{
+                background-color: $darkgold;
+            }
+        }
+    }
+}
+
+
+// 日历
+.datetimepicker{
+    width: 280px;
+    th,td{
+        padding: 10px!important;
+    }
+} 
+
+@media (max-width: 768px){
+    .mycontainer{
+        width: 500px;
+        margin-left: -250px;
+        margin-top: -150px;
+        .banner-content{
+            width: 500px;
+            padding-left:85px;
+            font-size: 60px!important;
+            margin-top: 0;
+        }
+    }
+    .tab-info{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .mycontainer{
+        width: 590px;
+        margin-left: -295px;
+        margin-top: -114px;
+        .banner-content{
+            font-size: 80px;
+            margin-top: 0;
+        }
+    }
+}
+@media (min-width: 992px){
+    .mycontainer{
+        width: 590px;
+        margin-left: -295px;
+        margin-top: -114px;
+        .banner-content{
+            margin-top: 0;
+        }
+    }
+}
+@media (min-width: 1200px){
+    .mycontainer{
+        width: 1170px;
+        margin-left: -585px;
+        margin-top: -275px;
+        .banner-content{
+            margin-top: 135px;
+        }
+    }
+}

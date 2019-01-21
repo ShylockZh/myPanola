@@ -1,0 +1,640 @@
+.sec .sec-top {
+  margin-bottom: 60px;
+}
+
+.sec .sec-title {
+  font-size: 44px;
+  line-height: 55px;
+  color: #0f3a4a;
+  padding-bottom: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+.sec .sec-desc {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #9b9fa6;
+  font-size: 16px;
+}
+
+.sec img {
+  display: block;
+  margin: 0 auto;
+}
+
+.mybtn {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #9b9fa6;
+  border: 1px solid #e1e6eb;
+  border-radius: 30px;
+  padding: 12px 33px 10px 32px;
+  transition: all 500ms ease;
+}
+
+.mybtn:hover {
+  background-color: #cda274;
+  border-color: #cda274;
+  color: #fff;
+  text-decoration: none;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .banner-content {
+  font-size: 80px;
+  color: #fff;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table {
+  min-height: 570px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 !important;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-title {
+  background-color: #faf5f0;
+  color: #0d2933;
+  padding: 20px 50px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.5em;
+  border-radius: 5px;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content {
+  position: relative;
+  padding: 20px 50px 50px;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content input, .banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content button {
+  padding: 10px 15px;
+  width: 280px;
+  height: 50px;
+  outline: 0;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content input {
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content button {
+  border: 1px solid #cda274;
+  background-color: #cda274;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.5em;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content button:hover {
+  background-color: #cc9152;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content .guestNumber {
+  display: none;
+  width: 280px;
+  top: 375px;
+  position: absolute;
+  background-color: pink;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content .guestNumber ul {
+  margin: 0;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content .guestNumber ul li {
+  padding: 3px 16px;
+  background-color: #0d2933;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content .guestNumber ul li:hover, .banner .swiper-container .swiper-slide .mycontainer .row .book-table .book-content .guestNumber ul li.active {
+  background-color: #cda274;
+}
+
+.datetimepicker {
+  background-color: #0d2933;
+}
+
+.datetimepicker .datetimepicker-dropdown-bottom-right:after {
+  display: none;
+}
+
+.datetimepicker .table-condensed thead tr:nth-child(1) {
+  background-color: #cda274;
+  color: #fff;
+}
+
+.datetimepicker .table-condensed thead tr:nth-child(1) .switch {
+  font-size: 16px;
+}
+
+.datetimepicker .table-condensed thead tr:nth-child(1) .switch:hover {
+  background-color: #cc9152;
+}
+
+.datetimepicker .table-condensed thead tr:nth-child(1) .prev, .datetimepicker .table-condensed thead tr:nth-child(1) .next {
+  background-color: #fff;
+  color: #ccc;
+}
+
+.datetimepicker .table-condensed thead tr:nth-child(2) th {
+  color: #fff;
+}
+
+.datetimepicker .table-condensed tbody .day {
+  background-color: #cda274;
+  border-radius: 0;
+  color: #fff;
+}
+
+.datetimepicker .table-condensed tbody .day:hover {
+  background-color: #cc9152;
+}
+
+.datetimepicker .table-condensed tbody .day.old, .datetimepicker .table-condensed tbody .day.new {
+  cursor: normal;
+  color: grey !important;
+  background-color: #0d2933 !important;
+}
+
+.datetimepicker .table-condensed tbody .day.old:hover, .datetimepicker .table-condensed tbody .day.new:hover {
+  background-color: transparent !important;
+}
+
+.datetimepicker .table-condensed tbody .day.active {
+  background: none;
+  background-color: #cc9152 !important;
+}
+
+.datetimepicker .table-condensed tbody .day.today.active, .datetimepicker .table-condensed tbody .day.today {
+  background: none;
+  background-color: #0d2933 !important;
+}
+
+.rooms {
+  padding: 110px 0;
+  background-color: #fff;
+}
+
+.rooms .rooms-item {
+  transition: all 0.5s;
+  margin-bottom: 40px;
+}
+
+.rooms .rooms-item:hover {
+  box-shadow: 0 15px 30px #e1e6eb;
+}
+
+.rooms .rooms-item .room-pic {
+  width: 100%;
+  position: relative;
+}
+
+.rooms .rooms-item .room-pic img {
+  width: 100%;
+}
+
+.rooms .rooms-item .room-pic .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(13, 41, 51, 0.8);
+  top: 0;
+  display: none;
+}
+
+.rooms .rooms-item .room-pic .mask .eye {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  transition: all 0.3s;
+}
+
+.rooms .rooms-item .room-pic .mask .eye:hover {
+  background-color: #cda274;
+}
+
+.rooms .rooms-item .room-pic .mask .eye i {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  color: #cda274;
+  line-height: 50px;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.rooms .rooms-item .room-pic .mask .eye i:hover {
+  color: #fff;
+}
+
+.rooms .rooms-item .room-detail {
+  border: 1px solid #e1e6eb;
+  padding: 30px 20px 20px;
+  position: relative;
+}
+
+.rooms .rooms-item .room-detail .room-title a {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 26px;
+  line-height: 35px;
+  color: #0d2933;
+}
+
+.rooms .rooms-item .room-detail .room-desc {
+  margin-bottom: 24px;
+  line-height: 26px;
+  color: #9b9fa6;
+  font-size: 16px;
+}
+
+.rooms .rooms-item .room-detail .room-price {
+  position: absolute;
+  top: -45px;
+  right: 30px;
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  color: #0d2933;
+  font-size: 26px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  box-shadow: 0 15px 30px #e1e6eb;
+}
+
+.rooms .rooms-item .room-detail .room-price span {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  display: block;
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: italic;
+  color: #9b9fa6;
+}
+
+.about {
+  height: 720px;
+  padding: 120px 0;
+  background-color: #f7f9fc;
+  background-image: url(../../images/index/pattern.png);
+}
+
+.about .sec-title {
+  text-align: left;
+}
+
+.about img {
+  margin: 0 0 20px 0;
+}
+
+.about .sec-desc p {
+  margin-bottom: 30px;
+  text-align: left;
+  line-height: 38px;
+}
+
+.about .about-pic {
+  position: relative;
+  padding-left: 20px;
+}
+
+.service {
+  padding: 140px 0 120px;
+}
+
+.service .sec-title {
+  text-align: left;
+}
+
+.service img {
+  margin: 0 0 20px 0;
+}
+
+.service .sec-desc p {
+  margin-bottom: 30px;
+  text-align: left;
+  line-height: 38px;
+}
+
+.service .tab-btn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 36px 15px 19px 15px;
+  border: 1px solid #e1e6eb;
+  margin-bottom: 40px;
+  color: #0d2933;
+  cursor: pointer;
+}
+
+.service .tab-btn .icon {
+  text-align: center;
+}
+
+.service .tab-btn .text {
+  text-align: center;
+}
+
+.service li.active .tab-btn {
+  background-color: #0d2933;
+  color: #fff;
+}
+
+.service li.active .tab-btn:after {
+  position: absolute;
+  content: '';
+  background: #0d2933;
+  width: 30px;
+  height: 30px;
+  left: 100%;
+  margin-bottom: 45px;
+  margin-left: -15px;
+  bottom: -8px;
+  transform: rotate(45deg);
+}
+
+.service li.active .tab-btn .icon {
+  color: #cda274;
+}
+
+.service .content-container .tab-content {
+  position: relative;
+  display: none;
+}
+
+.service .content-container .tab-content img {
+  width: 100%;
+  margin: 0;
+}
+
+.service .content-container .tab-content .tab-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background-color: #cda274;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.service .content-container .tab-content .tab-info .tab-title {
+  font-size: 30px;
+  padding: 0 0 20px;
+  font-weight: bold;
+  letter-spacing: 0.5em;
+}
+
+.service .content-container .tab-content .tab-info .tab-desc {
+  text-indent: 2em;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.enjoy {
+  height: 550px;
+  background-image: url("../../images/index/bg2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.enjoy .enjoy-cover {
+  padding: 160px 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.enjoy .enjoy-cover .title {
+  font-size: 90px;
+  color: #fff;
+  letter-spacing: 0.5em;
+  text-align: center;
+}
+
+.discover {
+  padding: 120px 0;
+  background-color: #f7f9fc;
+  background-image: url(../../images/index/pattern.png);
+}
+
+.discover .owl-carousel .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.discover .owl-carousel .item img {
+  transition: all 0.5s;
+}
+
+.discover .owl-carousel .item:hover img {
+  transform: scale(1.2);
+}
+
+.discover .owl-carousel .item .title {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.others {
+  padding: 120px 0;
+}
+
+.others .item {
+  border: 1px solid #e1e6eb;
+  transition: all 0.3s;
+}
+
+.others .item:hover {
+  border: 1px solid #cda274;
+}
+
+.others .item .others-content {
+  padding: 50px 15px 32px;
+}
+
+.others .item .others-content .photo {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  display: block;
+}
+
+.others .item .others-content .line {
+  margin: 30px auto;
+  width: auto;
+}
+
+.others .item .others-content .other-text .name {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  line-height: 30px;
+  color: #0d2933;
+}
+
+.others .item .others-content .other-text .title {
+  margin-bottom: 20px;
+}
+
+.others .item .others-content .other-text .title, .others .item .others-content .other-text .text p {
+  text-align: center;
+  font-size: 16px;
+  color: #9b9fa6;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.contact {
+  width: 100%;
+  position: relative;
+}
+
+.contact #allmap {
+  width: 100%;
+  height: 500px;
+  background-color: #ccc;
+}
+
+.contact .contact-content {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  height: 100%;
+  width: 470px;
+  background-color: #0d2933;
+  padding: 40px 40px 30px;
+}
+
+.contact .contact-content .contact-title {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 0.5em;
+  margin-bottom: 20px;
+}
+
+.contact .contact-content input, .contact .contact-content textarea {
+  width: 100%;
+  background-color: #213338;
+  border: 1px solid #0d2933;
+  outline: 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  color: #9b9fa6;
+}
+
+.contact .contact-content textarea {
+  height: 145px;
+}
+
+.contact .contact-content button {
+  width: 150px;
+  padding: 10px 20px;
+  background-color: #cda274;
+  outline: 0;
+  border: 0;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 26px;
+}
+
+.contact .contact-content button:hover {
+  background-color: #cc9152;
+}
+
+.datetimepicker {
+  width: 280px;
+}
+
+.datetimepicker th, .datetimepicker td {
+  padding: 10px !important;
+}
+
+@media (max-width: 768px) {
+  .mycontainer {
+    width: 500px;
+    margin-left: -250px;
+    margin-top: -150px;
+  }
+  .mycontainer .banner-content {
+    width: 500px;
+    padding-left: 85px;
+    font-size: 60px !important;
+    margin-top: 0;
+  }
+  .tab-info {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mycontainer {
+    width: 590px;
+    margin-left: -295px;
+    margin-top: -114px;
+  }
+  .mycontainer .banner-content {
+    font-size: 80px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .mycontainer {
+    width: 590px;
+    margin-left: -295px;
+    margin-top: -114px;
+  }
+  .mycontainer .banner-content {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mycontainer {
+    width: 1170px;
+    margin-left: -585px;
+    margin-top: -275px;
+  }
+  .mycontainer .banner-content {
+    margin-top: 135px;
+  }
+}

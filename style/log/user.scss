@@ -1,0 +1,152 @@
+$light:#faf5f0;
+$blackblue:#0d2933;
+$gold:#cda274;
+$darkgold: #cc9152;
+$grey : #9b9fa6;
+$white:#fff;
+$lightbb:#0f3a4a;
+$inputbb:#213338;
+$lightgrey:#e1e6eb;
+$lightblue:#f7f9fc;
+
+.user-content,.admin-content{
+    padding: 120px 0;
+    color: $blackblue;
+    background-color: $lightblue;
+    background-image: url(../../images/index/pattern.png);
+    .nav-tabs{
+        border-bottom-color: $lightbb;
+        a{
+            color: $blackblue;
+            font-size: 16px;
+    }
+        .active{
+            a{
+                border:1px solid $lightbb;
+                border-bottom-color:transparent; 
+                color: $lightbb;
+                &:hover,&:focus{                
+                    border:1px solid $lightbb;
+                    background-color: #fff;
+                    border-bottom-color:transparent; 
+                }
+            }
+        }
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    .box-container{
+        .box-content{
+            padding: 30px 20px;
+            width: 100%;
+            // height: 500px;
+            background-color: $white;
+            display: none;
+            min-height:500px;
+            &.active{
+                display: block;
+            }
+            // 个人信息
+            &.box1{
+                .item{
+                    width: 400px;
+                    margin: 0 auto;
+                    margin-bottom:20px; 
+                    label{
+                        width: 145px;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                    input{
+                        width:250px;
+                        height: 40px;
+                        border-radius: 5px;
+                        border: 0;
+                        font-size: 16px;
+                        border: 1px solid $lightbb;
+                        padding: 0 10px;
+                        
+                    }
+                    input[type=radio]{
+                        width: auto;
+                        height: auto;
+                        margin: 0 10px;
+                    }
+                    .toChange{
+                        color: $gold;
+                        display: inline-block;
+                        width: 100px;
+                        padding: 10px 20px;
+                        height: 40px;
+                        border: 1px solid $gold;
+                        background-color: #fff;
+                        border-radius:20px; 
+                        transition: all 0.3s;
+                        cursor: pointer;
+                        &:hover{
+                            color: $white;
+                            background-color: $gold;
+                            text-decoration: none;
+                        }
+                        &.btn-disable{
+                            background-color: $grey!important;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            // &.box2{
+            //     ;
+            // }
+            &.box3{
+                textarea{
+                    width: 80%;
+                    border-radius: 5px;
+                    border: 0;
+                    font-size: 20px;
+                    border: 1px solid $lightbb;
+                    padding: 10px;
+                }
+                .toSubmit{
+                    display: block;
+                    color: $gold;
+                    display: inline-block;
+                    width: 100px;
+                    padding: 10px 20px;
+                    height: 40px;
+                    border: 1px solid $gold;
+                    background-color: #fff;
+                    border-radius:20px; 
+                    transition: all 0.3s;
+                    &:hover{
+                        color: $white;
+                        background-color: $gold;
+                        text-decoration: none;
+                    }
+                    &.btn-disable{
+                        background-color: $grey!important;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+.admin-content{
+    .badge{
+        background-color: $lightbb;
+    }
+    .box-container{
+        .box-content{
+            a{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+::-webkit-input-placeholder{
+    color: red;
+}

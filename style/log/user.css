@@ -1,0 +1,140 @@
+.user-content, .admin-content {
+  padding: 120px 0;
+  color: #0d2933;
+  background-color: #f7f9fc;
+  background-image: url(../../images/index/pattern.png);
+}
+
+.user-content .nav-tabs, .admin-content .nav-tabs {
+  border-bottom-color: #0f3a4a;
+}
+
+.user-content .nav-tabs a, .admin-content .nav-tabs a {
+  color: #0d2933;
+  font-size: 16px;
+}
+
+.user-content .nav-tabs .active a, .admin-content .nav-tabs .active a {
+  border: 1px solid #0f3a4a;
+  border-bottom-color: transparent;
+  color: #0f3a4a;
+}
+
+.user-content .nav-tabs .active a:hover, .user-content .nav-tabs .active a:focus, .admin-content .nav-tabs .active a:hover, .admin-content .nav-tabs .active a:focus {
+  border: 1px solid #0f3a4a;
+  background-color: #fff;
+  border-bottom-color: transparent;
+}
+
+.user-content h2, .admin-content h2 {
+  margin-bottom: 20px;
+}
+
+.user-content .box-container .box-content, .admin-content .box-container .box-content {
+  padding: 30px 20px;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+  min-height: 500px;
+}
+
+.user-content .box-container .box-content.active, .admin-content .box-container .box-content.active {
+  display: block;
+}
+
+.user-content .box-container .box-content.box1 .item, .admin-content .box-container .box-content.box1 .item {
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.user-content .box-container .box-content.box1 .item label, .admin-content .box-container .box-content.box1 .item label {
+  width: 145px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.user-content .box-container .box-content.box1 .item input, .admin-content .box-container .box-content.box1 .item input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  border: 1px solid #0f3a4a;
+  padding: 0 10px;
+}
+
+.user-content .box-container .box-content.box1 .item input[type=radio], .admin-content .box-container .box-content.box1 .item input[type=radio] {
+  width: auto;
+  height: auto;
+  margin: 0 10px;
+}
+
+.user-content .box-container .box-content.box1 .item .toChange, .admin-content .box-container .box-content.box1 .item .toChange {
+  color: #cda274;
+  display: inline-block;
+  width: 100px;
+  padding: 10px 20px;
+  height: 40px;
+  border: 1px solid #cda274;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.user-content .box-container .box-content.box1 .item .toChange:hover, .admin-content .box-container .box-content.box1 .item .toChange:hover {
+  color: #fff;
+  background-color: #cda274;
+  text-decoration: none;
+}
+
+.user-content .box-container .box-content.box1 .item .toChange.btn-disable, .admin-content .box-container .box-content.box1 .item .toChange.btn-disable {
+  background-color: #9b9fa6 !important;
+  color: #fff;
+}
+
+.user-content .box-container .box-content.box3 textarea, .admin-content .box-container .box-content.box3 textarea {
+  width: 80%;
+  border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  border: 1px solid #0f3a4a;
+  padding: 10px;
+}
+
+.user-content .box-container .box-content.box3 .toSubmit, .admin-content .box-container .box-content.box3 .toSubmit {
+  display: block;
+  color: #cda274;
+  display: inline-block;
+  width: 100px;
+  padding: 10px 20px;
+  height: 40px;
+  border: 1px solid #cda274;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.user-content .box-container .box-content.box3 .toSubmit:hover, .admin-content .box-container .box-content.box3 .toSubmit:hover {
+  color: #fff;
+  background-color: #cda274;
+  text-decoration: none;
+}
+
+.user-content .box-container .box-content.box3 .toSubmit.btn-disable, .admin-content .box-container .box-content.box3 .toSubmit.btn-disable {
+  background-color: #9b9fa6 !important;
+  color: #fff;
+}
+
+.admin-content .badge {
+  background-color: #0f3a4a;
+}
+
+.admin-content .box-container .box-content a {
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: red;
+}

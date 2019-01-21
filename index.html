@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>派诺拉酒店 Panola Hotel</title>
+    <link rel="stylesheet" href="./plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plugins/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./plugins/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="./plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./plugins/aniview/animate.min.css">
+    <link rel="stylesheet" href="./plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./style/normal/header&footer.min.css">
+    <link rel="stylesheet" href="./style/index/index.min.css">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./plugins/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="./plugins/swiper/js/swiper.min.js"></script>
+    <script src="./plugins/aniview/jquery.aniview.min.js"></script>
+    <script src="./plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lHQSBTdWHXHeUpSyxXqwpVyxmgPv9iXb"></script>
+    <script src="./js/header&footer.js"></script>
+    <script src="./js/index.js"></script></script>
+</head>
+<body>
+    
+    <!-- header -->
+    <header class="container-fluid">
+        <div class="container">
+            <i class="fa fa-phone"></i>
+            <a href="contact_us.html">13800138000</a> 
+            <i class="fa fa-map-marker"></i>
+            <a href="about_us.html">四川省成都市武侯区天府软件园B5</a> 
+            <!-- 登录判断 -->
+            <div class="logJudge pull-right" id="logJudge">
+                <a class="active" href="login.html">请登录</a>
+                <a class="" href="register.html">注册</a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- nav -->
+    <nav class="navbar container-fluid navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar">
+                    </span>
+                </button> 
+                <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="rooms.html">客房</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">图库</a>
+                    </li>
+                    <li>
+                        <a href="news.html">新闻</a>
+                    </li>
+                    <li>
+                        <a href="travel.html">攻略</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="contact_us.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+    <!-- nav white -->
+    <nav class="navbar white container-fluid navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2"> 
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar">
+                    </span>
+                </button> 
+                <a class="navbar-brand" href="#"><img src="./images/logo_dark.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="rooms.html">客房</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">图库</a>
+                    </li>
+                    <li>
+                        <a href="news.html">新闻</a>
+                    </li>
+                    <li>
+                        <a href="travel.html">攻略</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="contact_us.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav white end -->
+    <!-- 内容 -->
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/index/banner/banner1.jpg" alt="">
+                    <div class="mycontainer">
+                        <div class="row">
+                            <div class="banner-content col-lg-8">
+                                邂逅<br/>
+                                不期而遇的美好
+                            </div>
+                            <div class="book-table col-lg-4 hidden-md hidden-sm hidden-xs">
+                                <div class="book-title">开始预定</div>
+                                <div class="book-content">
+                                    <label>邮箱</label>
+                                    <input type="email" placeholder="邮箱" name="email">
+                                    <label>到达日期</label>
+                                    <input type="text" placeholder="到达日期" name="arriveDate" class="arriveDate">
+                                    <label>离开日期</label>
+                                    <input type="text" placeholder="离开日期" name="leaveDate" class="leaveDate">
+                                    <label>房客数</label>
+                                    <input type="select" placeholder="房客数" name="guests" class="guests">
+                                    <div class="guestNumber">
+                                        <ul>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>其他</li>
+                                        </ul>
+                                    </div>
+                                    <button>现在预定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                        <img src="./images/index/banner/banner2.jpg" alt="">
+                        <div class="mycontainer">
+                            <div class="row">
+                                <div class="banner-content col-lg-8">
+                                    卓尔不群<br/>
+                                    独具一格
+                                </div>
+                                <div class="book-table col-lg-4 hidden-md hidden-sm hidden-xs">
+                                    <div class="book-title">开始预定</div>
+                                    <div class="book-content">
+                                        <label>邮箱</label>
+                                        <input type="email" placeholder="邮箱" name="email">
+                                        <label>到达日期</label>
+                                        <input type="text" placeholder="到达日期" name="arriveDate" class="arriveDate">
+                                        <label>离开日期</label>
+                                        <input type="text" placeholder="离开日期" name="leaveDate" class="leaveDate">
+                                        <label>房客数</label>
+                                        <input type="select" placeholder="房客数" name="guests" class="guests">
+                                        <div class="guestNumber">
+                                            <ul>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>其他</li>
+                                            </ul>
+                                        </div>
+                                        <button>现在预定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="swiper-slide">
+                        <img src="./images/index/banner/banner3.jpg" alt="">
+                        <div class="mycontainer">
+                            <div class="row">
+                                <div class="banner-content col-lg-8">
+                                    让彼此更亲近的<br/>
+                                    珍贵旅程
+                                </div>
+                                <div class="book-table col-lg-4 hidden-md hidden-sm hidden-xs">
+                                    <div class="book-title">开始预定</div>
+                                    <div class="book-content">
+                                        <label>邮箱</label>
+                                        <input type="email" placeholder="邮箱" name="email">
+                                        <label>到达日期</label>
+                                        <input type="text" placeholder="到达日期" name="arriveDate" class="arriveDate">
+                                        <label>离开日期</label>
+                                        <input type="text" placeholder="离开日期" name="leaveDate" class="leaveDate">
+                                        <label>房客数</label>
+                                        <input type="select" placeholder="房客数" name="guests" class="guests">
+                                        <div class="guestNumber">
+                                            <ul>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>其他</li>
+                                            </ul>
+                                        </div>
+                                        <button>现在预定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+          </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- rooms -->
+    <div class="rooms sec">
+        <div class="container">
+            <div class="sec-top">
+                <div class="sec-title">我们的客房</div>
+                <div class="sec-desc">始终坚持细致的服务 为每一位宾客创造理想的旅程及难忘的回忆</div>
+                <img src="./images/index/shap.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="rooms-item">
+                        <div class="room-pic">
+                            <img src="./images/index/rooms/rooms1.jpg" alt="">
+                            <div class="mask">
+                                <div class="eye">
+                                    <a href=""><i class="fa fa-eye"></i></a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-detail">
+                            <div class="room-title">
+                                <a href="">单人间</a>
+                            </div>
+                            <div class="room-desc">
+                                我们保留着原有建筑结构,简约和极简主义搭配复古家具,为酒店营造一种复古氛围｡
+                            </div>
+                            <a href="#" class="mybtn">现在预定</a>
+                            <div class="room-price">
+                                $150
+                                <span>Per Night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="rooms-item">
+                        <div class="room-pic">
+                            <img src="./images/index/rooms/rooms2.jpg" alt="">
+                            <div class="mask">
+                                <div class="eye">
+                                    <a href=""><i class="fa fa-eye"></i></a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-detail">
+                            <div class="room-title">
+                                <a href="">双人间</a>
+                            </div>
+                            <div class="room-desc">
+                                我们保留着原有建筑结构,简约和极简主义搭配复古家具,为酒店营造一种复古氛围｡
+                            </div>
+                            <a href="#" class="mybtn">现在预定</a>
+                            <div class="room-price">
+                                $250
+                                <span>Per Night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="rooms-item">
+                        <div class="room-pic">
+                            <img src="./images/index/rooms/rooms3.jpg" alt="">
+                            <div class="mask">
+                                <div class="eye">
+                                    <a href=""><i class="fa fa-eye"></i></a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-detail">
+                            <div class="room-title">
+                                <a href="">豪华间</a>
+                            </div>
+                            <div class="room-desc">
+                                我们保留着原有建筑结构,简约和极简主义搭配复古家具,为酒店营造一种复古氛围｡
+                            </div>
+                            <a href="#" class="mybtn">现在预定</a>
+                            <div class="room-price">
+                                $300
+                                <span>Per Night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rooms end -->
+
+    <!-- about -->
+    <div class="about sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="sec-title">派诺拉酒店</div>
+                    <img src="./images/index/shap.png" alt="">
+                    <div class="sec-desc">
+                        <p>成都派诺拉酒店拥有593间设计典雅、空间宽敞的豪华客房和套房，以及26套服务式公寓以满足长期住客的需要。酒店位于成都市中心地带，所有房间均可饱览美轮美奂的城市高空景观。以豪华的装潢、时尚现代的布置以及色彩明快的设计缔造不同凡响的住宿体验。
+                            </p>
+                        <p>百年以来，派诺拉以其服务、餐饮和设施的高标准奠定了酒店服务的新高度。直至今日，公司仍在不断壮大，并在全世界令人向往的目的地为客人创造美好而有意义的旅程。</p>
+                    </div>
+                    <a href="#" class="mybtn">关于我们</a>
+                </div>
+                <div class="col-lg-6 hidden-md hidden-sm hidden-xs">
+                    <div class="about-pic aniview slow" av-animation="fadeInUp">
+                        <img src="./images/index/about.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about end -->
+
+    <!-- service -->
+    <div class="service sec">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="sec-title">最好的服务</div>
+                        <img src="./images/index/shap.png" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 sec-desc">
+                        <p>我们将为您提供各种服务和设施，满足宾客的所有需求。如您所需的服务未列于此，请随时联系我们，我们将竭诚为您服务。</p>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="service-tabs">
+                        <ul class="tab-title">
+                            <li class="service-tab-items active">
+                                <div class="tab-btn">
+                                    <div class="icon"><i class="fa fa-cutlery fa-2x"></i></div>
+                                    <div class="text">餐厅</div>
+                                </div>
+                            </li>
+                            <li class="service-tab-items">
+                                <div class="tab-btn">
+                                    <div class="icon"><i class="fa fa-coffee fa-2x"></i></div>
+                                    <div class="text">休闲</div>
+                                </div>
+                            </li>
+                            <li class="service-tab-items">
+                                <div class="tab-btn">
+                                    <div class="icon"><i class="fa fa-bath fa-2x"></i></div>
+                                    <div class="text">泳池</div>
+                                </div>
+                            </li>
+                            <li class="service-tab-items">
+                                <div class="tab-btn">
+                                    <div class="icon"><i class="fa fa-pencil-square-o fa-2x"></i></div>
+                                    <div class="text">会议室</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12">
+                    <div class="content-container">
+                        <div class="tab-content" style="display:block">
+                            <img src="./images/index/serivce/service1.jpg" alt="">
+                            <div class="tab-info">
+                                <div class="tab-title">餐厅</div>
+                                <div class="tab-desc">龙轩中餐厅拥有最好的广东厨师！ 提供各种点心、点菜和菜单。 主厨以烹制传统的广东海鲜和季节风味菜而出名。 4个独立餐厅可分别容纳12到15个人就餐，主餐厅设有一张单独的大餐桌，最多可坐50人。</div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <img src="./images/index/serivce/service2.jpg" alt="">
+                            <div class="tab-info">
+                                <div class="tab-title">休闲</div>
+                                <div class="tab-desc">龙轩中餐厅拥有最好的广东厨师！ 提供各种点心、点菜和菜单。 主厨以烹制传统的广东海鲜和季节风味菜而出名。 4个独立餐厅可分别容纳12到15个人就餐，主餐厅设有一张单独的大餐桌，最多可坐50人。</div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <img src="./images/index/serivce/service3.jpg" alt="">
+                            <div class="tab-info">
+                                <div class="tab-title">泳池</div>
+                                <div class="tab-desc">龙轩中餐厅拥有最好的广东厨师！ 提供各种点心、点菜和菜单。 主厨以烹制传统的广东海鲜和季节风味菜而出名。 4个独立餐厅可分别容纳12到15个人就餐，主餐厅设有一张单独的大餐桌，最多可坐50人。</div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <img src="./images/index/serivce/service4.jpg" alt="">
+                            <div class="tab-info">
+                                <div class="tab-title">会议室</div>
+                                <div class="tab-desc">24个面积不同的多功能厅均配有先进的设施设备，可满足客户不同层次的会务需求及会议场所的诸多选择。近2,800平方米的水晶大厅，是无柱型宴会厅，可容纳2,800人，并可根据不同需求分割成6个独立的会议室。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service end -->
+
+    <!-- enjoy -->
+    <div class="enjoy">
+        <div class="enjoy-cover">
+            <div class="title">享受假期</div>
+            <div class="title"><i class="fa fa-heart"></i></div>
+        </div>
+    </div>
+    <!-- enjoy end -->
+
+    <!-- discover -->
+    <div class="discover sec">
+        <div class="container">
+            <div class="sec-top">
+                <div class="sec-title">发现派诺拉</div>
+                <div class="sec-desc">
+                    周边的美景
+                </div>
+                <img src="./images/index/shap.png" alt="">
+            </div>
+            
+            <div class="owl-carousel owl-theme" id="discover-carousel">
+                <div class="item">
+                    <a href="">
+                        <img src="./images/index/discover/dis-1.jpg" alt="">
+                    </a> 
+                    <div class="title">Beautiful Place</div>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="./images/index/discover/dis-2.jpg" alt="">
+                    </a> 
+                    <div class="title">Place of London</div>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="./images/index/discover/dis-3.jpg" alt="">
+                    </a> 
+                    <div class="title">Place of Norway</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- discover end -->
+
+    <!-- others -->
+    <div class="others sec">
+        <div class="container">
+            <div class="sec-top">
+                <div class="sec-title">他们怎么说？</div>
+                <div class="sec-desc">
+                    <p>尽心尽力为您服务</p>
+                </div>
+                <img src="./images/index/shap.png" alt="">
+            </div>
+            <div class="owl-carousel owl-theme" id="others-carousel">
+                    <div class="item">
+                        <div class="others-content">
+                            <img src="./images/index/others/t1.png" alt="" class="photo">
+                            <img src="./images/index/shap.png" alt="" class="line">
+                            <div class="other-text">
+                                <div class="name">Erica Romaguera</div>
+                                <div class="title">设计师</div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor inciduntut labore.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="others-content">
+                            <img src="./images/index/others/t2.png" alt="" class="photo">
+                            <img src="./images/index/shap.png" alt="" class="line">
+                            <div class="other-text">
+                                <div class="name">Erica Romaguera</div>
+                                <div class="title">设计师</div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor inciduntut labore.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="others-content">
+                            <img src="./images/index/others/t3.png" alt="" class="photo">
+                            <img src="./images/index/shap.png" alt="" class="line">
+                            <div class="other-text">
+                                <div class="name">Erica Romaguera</div>
+                                <div class="title">设计师</div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor inciduntut labore.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- others end -->
+
+    <!-- lHQSBTdWHXHeUpSyxXqwpVyxmgPv9iXb -->
+    <!-- contact -->
+    <div class="contact">
+        <div id="allmap"></div>
+        <script type="text/javascript">
+            var map = new BMap.Map("allmap");
+            var point = new BMap.Point(104.077806,30.552114);
+            var marker = new BMap.Marker(point);
+            map.addOverlay(marker); 
+            map.centerAndZoom("天府软件园-B5座", 18);
+            map.enableScrollWheelZoom(true);
+        </script>
+        <div class="contact-content">
+            <div class="contact-title">联系我们</div>
+                <form action="">
+                <input type="text" placeholder="Your Name" name="name">
+                <input type="email" placeholder="Your Email" name="email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button>发 送</button>
+            </form>
+        </div>
+    </div>
+    <!-- contact end -->
+    
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-left col-lg-3 col-md-6 col-sm-6">
+                    <img src="./images/logo.png" alt="">
+                    <p>Lorem ipsum dolor amet consecte tur adi pisicing elit sed eiusm tempor incididunt</p>
+                    <p>Lorem ipsum dolor amet consecte tur adi pisicing elit sed eiusm tempor incididunt</p>
+                </div>
+                <div class="footer-mid col-lg-5 col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="footer-title">导航</div>
+                            <ul class="list">
+                                <li><a href="index.html">首页 Home</a></li>
+                                <li><a href="rooms.html">客房 Rooms</a></li>
+                                <li><a href="gallery.html">图库 Gallery</a></li>
+                                <li><a href="news.html">新闻 News</a></li>
+                                <li><a href="travel.html">攻略 Travel</a></li>
+                                <li><a href="about_us.html">关于我们 About Us</a></li>
+                                <li><a href="contact_us.html">联系我们 Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="footer-title">联系方式</div>
+                            <ul class="list">
+                                <li>四川省成都市武侯区天府软件园B5</li>
+                                <li>13800138000</li>
+                                <li>13800138000@qq.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-title">订阅</div>
+                    <p>及时获取我们的最新信息</p>
+                    <div class="subscribe-form">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="  Email" required="">
+                                <button type="submit">订阅</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+<div class="footer-btm">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 column">
+                <div class="copyright"><span>Panola</span> © 2018 All Right Reserved</div> 
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 column">
+                <div class="whatever text-right">第二小组 版权所有</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- footer end -->
+    <div class="toTop"><i class="glyphicon glyphicon-chevron-right "></i></div>  
+</body>
+</html>

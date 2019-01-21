@@ -1,0 +1,94 @@
+$light:#faf5f0;
+$blackblue:#0d2933;
+$gold:#cda274;
+$darkgold: #cc9152;
+$grey : #9b9fa6;
+$white:#fff;
+$lightbb:#0f3a4a;
+$inputbb:#213338;
+$lightgrey:#e1e6eb;
+$lightblue:#f7f9fc;
+
+// login
+.log-content{
+    height: 800px;
+    padding: 45px 0;
+    background-image: url('../../images/index/bg2.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+    background-position: center center;
+    .log{
+        background-color: rgba(0,0,0,.5);
+        height: 100%;
+        padding: 50px;
+        .log-title{
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: $white;
+            text-align: center;
+            letter-spacing: 0.5em;
+        }
+        .item{
+            color: $white;
+            margin-bottom: 20px;
+            // line-height: 40px;
+            
+            label{
+                width: 20%;
+                display: inline-block;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: $white;
+                font-weight: 400;
+                margin-right: 20px;
+            }
+            input{
+                width: 70%;
+                height: 40px;
+                color: $blackblue;
+                font-size: 16px;
+                // display: block;
+                &[type=radio],&[type=checkbox]{
+                    width: auto;
+                    display: inline-block;
+                    height: auto;
+                }
+            }
+            span{
+                display: inline;
+                text-align: center;
+                margin-right: 20px;
+            }
+            button{
+                width: 150px;
+                padding: 10px 20px;
+                margin-top: 10px;
+                font-size: 20px;
+                border-radius: 26px;
+                outline: 0;
+                border: 0;
+                background-color: $gold;
+                transition: all 0.5s;
+                &:hover{
+                    border-color: $darkgold;
+                }
+                &.btn-disable{
+                    background-color: $grey!important;
+                }
+            }
+        }
+    }
+}
+
+.login{
+    padding: 120px;
+}
+
+.modal.in .modal-dialog{
+    top: 90px;
+}
+
+::-webkit-input-placeholder{
+    color: red;
+}
